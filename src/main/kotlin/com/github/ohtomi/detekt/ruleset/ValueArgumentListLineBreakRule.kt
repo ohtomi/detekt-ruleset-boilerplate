@@ -18,7 +18,7 @@ class ValueArgumentListLineBreakRule : Rule() {
         id = "value-argument-list-line-break",
         severity = Severity.Style,
         debt = Debt.FIVE_MINS,
-        description = "should linek break"
+        description = "should line break"
     )
 
     override fun visitValueArgumentList(list: KtValueArgumentList) {
