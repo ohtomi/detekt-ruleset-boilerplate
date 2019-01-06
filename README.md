@@ -5,11 +5,7 @@
 
 ## Description
 
-TODO
-
-## Usage
-
-TODO
+This is a repository of `detekt` boilerplate.
 
 ## Contributing
 
