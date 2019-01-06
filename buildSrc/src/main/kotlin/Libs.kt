@@ -47,7 +47,7 @@ object Libs {
     /**
      * [kotlin-compiler-embeddable website](https://kotlinlang.org/) */
     const val kotlin_compiler_embeddable: String =
-            "org.jetbrains.kotlin:kotlin-compiler-embeddable:" + Versions.kotlin_compiler_embeddable
+            "org.jetbrains.kotlin:kotlin-compiler-embeddable:" + Versions.org_jetbrains_kotlin
 
     /**
      * [kotlin-scripting-compiler-embeddable website](https://kotlinlang.org/) */

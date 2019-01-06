@@ -11,9 +11,8 @@ object Versions {
 
     const val com_jfrog_bintray_gradle_plugin: String = "1.8.4" 
 
-    const val io_gitlab_arturbosch_detekt: String = "1.0.0-RC11"
-            /* Could not find io.gitlab.arturbosch.detekt:detekt-cli:1.0.0-RC11.
-            .... */
+    const val io_gitlab_arturbosch_detekt: String =
+            "1.0.0-RC11" // exceed the version found: 1.0.0.M7.b1
 
     const val jmfayard_github_io_gradle_kotlin_dsl_libs_gradle_plugin: String = "0.2.6" 
 
@@ -21,13 +20,11 @@ object Versions {
 
     const val org_ajoberstar_reckon_gradle_plugin: String = "0.9.0" 
 
-    const val org_jetbrains_dokka_gradle_plugin: String = "0.9.17"
+    const val org_jetbrains_dokka_gradle_plugin: String = "0.9.17" 
 
-    const val org_jetbrains_kotlin_jvm_gradle_plugin: String = "1.3.10"
+    const val org_jetbrains_kotlin_jvm_gradle_plugin: String = "1.3.11" 
 
-    const val org_jetbrains_kotlin: String = "1.3.10"
-
-    const val kotlin_compiler_embeddable: String = "1.3.0"
+    const val org_jetbrains_kotlin: String = "1.3.11" 
 
     /**
      *
@@ -37,9 +34,9 @@ object Versions {
     object Gradle {
         const val runningVersion: String = "5.0"
 
-        const val currentVersion: String = "5.0"
+        const val currentVersion: String = "5.1"
 
-        const val nightlyVersion: String = "5.2-20181208000047+0000"
+        const val nightlyVersion: String = "5.2-20190103000556+0000"
 
         const val releaseCandidate: String = ""
     }
