@@ -14,11 +14,17 @@ object Libs {
     const val com_jfrog_bintray_gradle_plugin: String =
             "com.jfrog.bintray:com.jfrog.bintray.gradle.plugin:" + Versions.com_jfrog_bintray_gradle_plugin
 
+    const val detekt_api: String =
+            "io.gitlab.arturbosch.detekt:detekt-api:" + Versions.io_gitlab_arturbosch_detekt
+
     const val detekt_cli: String =
             "io.gitlab.arturbosch.detekt:detekt-cli:" + Versions.io_gitlab_arturbosch_detekt
 
     const val detekt_formatting: String =
             "io.gitlab.arturbosch.detekt:detekt-formatting:" + Versions.io_gitlab_arturbosch_detekt
+
+    const val detekt_test: String =
+            "io.gitlab.arturbosch.detekt:detekt-test:" + Versions.io_gitlab_arturbosch_detekt
 
     const val io_gitlab_arturbosch_detekt_gradle_plugin: String =
             "io.gitlab.arturbosch.detekt:io.gitlab.arturbosch.detekt.gradle.plugin:" + Versions.io_gitlab_arturbosch_detekt
@@ -37,6 +43,11 @@ object Libs {
 
     const val org_jetbrains_kotlin_jvm_gradle_plugin: String =
             "org.jetbrains.kotlin.jvm:org.jetbrains.kotlin.jvm.gradle.plugin:" + Versions.org_jetbrains_kotlin_jvm_gradle_plugin
+
+    /**
+     * [kotlin-compiler-embeddable website](https://kotlinlang.org/) */
+    const val kotlin_compiler_embeddable: String =
+            "org.jetbrains.kotlin:kotlin-compiler-embeddable:" + Versions.kotlin_compiler_embeddable
 
     /**
      * [kotlin-scripting-compiler-embeddable website](https://kotlinlang.org/) */

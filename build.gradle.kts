@@ -21,9 +21,12 @@ val ktlint by configurations.creating
 
 dependencies {
     implementation(Libs.kotlin_stdlib_jdk8)
+    implementation(Libs.detekt_api)
+    implementation(Libs.kotlin_compiler_embeddable)
 
     testImplementation(Libs.kotlin_test)
     testImplementation(Libs.kotlin_test_junit)
+    testImplementation(Libs.detekt_test)
 
     ktlint(Libs.ktlint)
     detektPlugins(Libs.detekt_formatting)
