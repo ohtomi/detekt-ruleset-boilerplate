@@ -31,11 +31,7 @@ class ValueArgumentListLineBreakRule : Rule() {
                 !child.nextSibling.textContains('\n')
         }
         if (isError) {
-            report(CodeSmell(
-                issue,
-                Entity.from(list),
-                errorMessage
-            ))
+            report(CodeSmell(issue, Entity.from(list), errorMessage))
         }
     }
 }
