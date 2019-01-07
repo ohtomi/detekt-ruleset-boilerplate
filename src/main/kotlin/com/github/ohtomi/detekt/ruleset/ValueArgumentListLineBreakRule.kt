@@ -9,6 +9,7 @@ import io.gitlab.arturbosch.detekt.api.Severity
 import org.jetbrains.kotlin.com.intellij.psi.PsiWhiteSpace
 import org.jetbrains.kotlin.lexer.KtTokens
 import org.jetbrains.kotlin.psi.KtValueArgumentList
+import org.jetbrains.kotlin.psi.psiUtil.allChildren
 
 class ValueArgumentListLineBreakRule : Rule() {
 
@@ -24,7 +25,7 @@ class ValueArgumentListLineBreakRule : Rule() {
     override fun visitValueArgumentList(list: KtValueArgumentList) {
         super.visitValueArgumentList(list)
 
-        val isError = list.children.any { child ->
+        val isError = list.allChildren.any { child ->
             child.node.elementType == KtTokens.COMMA &&
                 child.nextSibling is PsiWhiteSpace &&
                 !child.nextSibling.textContains('\n')
